@@ -689,7 +689,6 @@ do
 	fi
 	
 	html=$(template "$html" basepath "$basepath")
-	html=$(template "$html" disqus_identifier "${nav_url[i]}")
 	
 	# set default values for {{XXX:default}} strings
 	html=$(echo "$html" | sed "s/{{[^{}]*:\([^}]*\)}}/\1/g")
@@ -705,7 +704,6 @@ done
 
 basepath="./"
 firsthtml=$(template "$firsthtml" basepath "$basepath")
-firsthtml=$(template "$firsthtml" disqus_identifier "$firstpath")
 firsthtml=$(template "$firsthtml" resourcepath "$firstpath/")
 firsthtml=$(echo "$firsthtml" | sed "s/{{[^{}]*:\([^}]*\)}}/\1/g")
 firsthtml=$(echo "$firsthtml" | sed "s/{{[^}]*}}//g; s/<ul><\/ul>//g")
