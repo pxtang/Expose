@@ -589,8 +589,6 @@ do
 	html=$(template "$html" sitetitle "$site_title")
 	html=$(template "$html" gallerytitle "${nav_name[i]}")
 	
-	html=$(template "$html" disqus_shortname "$disqus_shortname")
-	
 	resolutionstring=$(printf "%s " "${resolution[@]}")
 	html=$(template "$html" resolution "$resolutionstring")
 	
