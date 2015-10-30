@@ -2,7 +2,7 @@
 
 # configuration
 
-site_title=${site_title:-"My Awesome Photos"}
+site_title=${site_title:-"Peter Tang | Photography"}
 
 theme_dir=${theme_dir:-"theme1"}
 
